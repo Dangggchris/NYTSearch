@@ -13,6 +13,7 @@ $("#run-search").on("click", function (event) {
         url: queryURL,
         method: "GET"
     })
+   
         .then(function (response) {
 
             console.log(queryURL)
@@ -35,7 +36,7 @@ $("#run-search").on("click", function (event) {
                 webURL.text(articles[i].web_url)
                 var date = $("<p>")
                 date.text(articles[i].pub_date)
-
+            
 
                 div.append(h1Element)
                 div.append(p)
@@ -46,7 +47,10 @@ $("#run-search").on("click", function (event) {
 
             }
 
-
-
+           
         })
 })
+function clear() {
+    $("#article-section").empty();
+  }
+  $("#clear-all").on("click", clear);

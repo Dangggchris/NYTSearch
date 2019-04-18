@@ -17,7 +17,7 @@
     <div class="contaner">
         <div class="row">
             <div class="col-sm-12">
-                <div class="jumbotron">
+                <div class="jumbotron" style="background-color: #20315A ; color: white;">
                     <h1 class="text-center">
                         <header>New York Times Search</header>
                     </h1>
@@ -30,9 +30,9 @@
                                 <strong>Search Parameters</strong>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <label for="search-term" class="list-group-item">Search Term</label>
+                                <label for="search-term" class="list-group-item">Search Term: </label>
                                 <input type="text" id="search-term">
-                                <li class="list-group-item">Number of Records to Retrieve</li> <select
+                                <li class="list-group-item">Number of Records to Retrieve: </li> <select
                                     class="custom-select" id="inputGroupSelect01">
                                     <option selected>Choose...</option>
                                     <option value="5">5</option>
@@ -40,13 +40,12 @@
                                     <option value="15">15</option>
                                 </select>
 
-                                <li class="list-group-item">Start Year</li>
+                                <li class="list-group-item">Start Year (optional): </li>
                                 <input type="text" id="startYear">
 
-                                <li class="list-group-item">End Year</li>
+                                <li class="list-group-item">End Year (optional): </li>
                                 <input type="text" id="endYear">
                             </ul>
-
                             <button type="submit" class="btn btn-default" id="run-search">
                                 Search
                             </button>
