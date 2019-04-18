@@ -1,92 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    <script type="text/javascript" src="assets/index.js"></script>
+
     <title>NYTSearch</title>
 </head>
+
 <body>
 
-<div class="contaner">
-    <div class="row">
-        <div class="col-sm-12">
+    <div class="contaner">
+        <div class="row">
+            <div class="col-sm-12">
                 <div class="jumbotron">
-                        <h1 class="text-center">
-                          <header>New York Times Search</header>
-                        </h1>
+                    <h1 class="text-center">
+                        <header>New York Times Search</header>
+                    </h1>
                 </div>
-        
+
                 <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 mb-5">
-                        <div class="card-header active">
-                            <strong>Search Parameters</strong>
-                        </div>
+                    <div class="row">
+                        <div class="col-sm-12 mb-5">
+                            <div class="card-header active">
+                                <strong>Search Parameters</strong>
+                            </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Search Term</li>
-                                    <input type="text">
-                                    <li class="list-group-item">Number of Records to Retrieve</li>                                <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Choose...</option>
-                                        <option value="5">5</option>
-                                        <option value="10">10</option>
-                                        <option value="15">15</option>
-                                    </select>
+                                <label for="search-term" class="list-group-item">Search Term</label>
+                                <input type="text" id="search-term">
+                                <li class="list-group-item">Number of Records to Retrieve</li> <select
+                                    class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                </select>
 
-                                    <li class="list-group-item">Start Year</li>
-                                    <input type="text" id="startYear">
+                                <li class="list-group-item">Start Year</li>
+                                <input type="text" id="startYear">
 
-                                    <li class="list-group-item">End Year</li>
-                                    <input type="text" id="endYear">
+                                <li class="list-group-item">End Year</li>
+                                <input type="text" id="endYear">
                             </ul>
 
                             <button type="submit" class="btn btn-default" id="run-search">
-                                <p class="search"></p> Search</button>
+                                Search
+                            </button>
                             <button class="btn btn-default" id="clear-all">
-                                <p class="clear"></p> Clear Results</button>
-                        
+                                <p class="clear"></p> Clear Results
+                            </button>
+
+                        </div>
                     </div>
                 </div>
-        </div>
-    </div>
+            </div>
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
 
-                <div class="list-group">
+                        <div class="list-group">
 
-                    <div class="list-group-item">
-                        <p class=""></p>Top Articles
+                            <div class="list-group-item">
+                                <p class=""></p>Top Articles
+                            </div>
+
+                            <div class="list-group-item" id="article-section"></div>
+
+                        </div>
                     </div>
-
-                    <div class="list-group-item" id="article-section"></div>
-                    
                 </div>
             </div>
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
 
-                <hr>
-                <h5 class="text-center">
-                    <small>Made with only some love
-                    </small>
-                </h5>
-        
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <hr>
+                        <h5 class="text-center">
+                            <small>Made with only some love
+                            </small>
+                        </h5>
+
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
-</div>
+        </div>
+        <script type="text/javascript" src="assets/index.js"></script>
 
 </body>
+
 </html>
