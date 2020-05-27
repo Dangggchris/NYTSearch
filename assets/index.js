@@ -17,6 +17,7 @@ $("#run-search").on("click", function (event) {
 
             console.log(queryURL)
             console.log(response)
+            
             var articles = response.response.docs
 
             for (var i = 0; i < displayLimit; i++) {
@@ -36,6 +37,7 @@ $("#run-search").on("click", function (event) {
                 var date = $("<p>")
                 date.text(articles[i].pub_date)
 
+                console.log(articles[i].pub_date)
 
                 div.append(h1Element)
                 div.append(p)
